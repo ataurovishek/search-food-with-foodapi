@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --tenne-tawny: #d65108;
+    --tenne-tawny-dark: #b54507;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background: #f5eaea;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.container .meal-wrapper .header {
+	text-align: center;
+	padding-top: 5rem;
+    padding-bottom: 1rem;
+	
+}
+
+.meal-wrapper .header h2{
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 1rem;
+}
+.meal-wrapper .header p{
+ margin: 0;
+}
+
+.meal-wrapper .search{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meal-wrapper .search input{
+    width: 50%;
+    height: 3rem;
+    padding: 1rem;
+    font-size: 1rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border: 1px solid rgb(120, 118, 118);
+    border-inline-end: none;
+    outline: none;
+    color: var(--tenne-tawny);
+
+}
+
+.not-found{
+    grid-template-columns: 1fr !important;
+    color: var(--tenne-tawny);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.meal-wrapper .search button{
+    outline: none;
+    border: none;
+}
+.meal-wrapper .search input::placeholder{
+    color: var(--tenne-tawny-dark);
+}
+
+.meal-wrapper .search input:focus{
+    border: 1px solid var(--tenne-tawny);
+}
+
+.meal-wrapper .search .icon {
+	padding: 1rem;
+	background: var(--tenne-tawny);
+	border-top-right-radius: 2rem;
+	border-bottom-right-radius: 2rem;
+	color: white;
+	font-size: 1rem;
+}
+
+.meal-wrapper  h4{
+text-align: center;
+padding: 2.2rem;
+font-size: 2rem;
+}
+
+.meal-wrapper .meals{
+    padding: 0 5rem;
+   display: grid; 
+   grid-template-columns: repeat(3,1fr);
+   margin-top: 2rem;
+   gap: 2rem;
+   place-content: center;
+   overflow: hidden;
+}
+
+.meal-wrapper .meals .meal{
+    width: 350px;
+    border-radius: 1rem;
+    background: #ffffff;
+    box-shadow:0 4px 21px -12px rgba(0,0,0,0.79)
+    
+}
+
+.meal-wrapper .meals .meal   img{
+    width: 100%;
+    display: block;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    background-position: center;
+
+}
+
+.meals .meal .meal-desc h4{
+ font-size: 1.5rem;
+}
+.meals .meal .meal-desc a{
+    text-decoration: none;
+    color: white;
+    background: var(--tenne-tawny);
+    border-radius: 2rem;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
